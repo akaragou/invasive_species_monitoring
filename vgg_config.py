@@ -8,6 +8,8 @@ class InvasiveSpeciesConfigVgg():
         self.checkpoint_path = os.path.join(self.main_dir, 'checkpoints')
         self.summary_path = os.path.join(self.main_dir, 'summaries')
         self.results_path = os.path.join(self.main_dir, 'results')
+        self.features = os.path.join(self.main_dir, 'features')
+        self.embedding = os.path.join(self.main_dir, 'embedding')
         self.model_path = os.path.join(self.main_dir, 'model_checkpoints/vgg_16.ckpt')
         self.train_fn =  os.path.join(self.main_dir, 'tfrecords/train.tfrecords')
         self.val_fn =  os.path.join(self.main_dir, 'tfrecords/val.tfrecords')
